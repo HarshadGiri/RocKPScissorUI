@@ -1,0 +1,31 @@
+#img1{
+    position: absolute;
+    width: 134px;
+    height: 100px;
+    left: 299px;
+    top: 380px;
+    
+    
+    }
+    
+    /* image 2 */
+    #img2{
+        position: absolute;
+        width: 104px;
+        height: 100px;
+        left: 454px;
+        top: 380px;
+    
+    }
+    /* image 3 */
+    #img3{
+        position: absolute;
+        width: 114px;
+        height: 100px;
+        left: 605px;
+        top: 380px;
+        
+    }
+    .img{margin: 0;
+    }
+    

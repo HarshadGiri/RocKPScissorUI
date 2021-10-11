@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 body{
-    background-image: url('/8-bit-sunset-40969-1920x1080.jpg');
+    background: url(/8-bit-sunset-40969-1920x1080.jpg) no-repeat center center/cover;
     height: 100%;
     width: 90%;
     font-family: Luckiest Guy;
