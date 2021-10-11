@@ -7,11 +7,14 @@ const Imguser = document.getElementById('Imguser')
 const com = document.getElementById('com')
 const win = document.getElementById('win')
 let img = document.querySelector('.img')
+let sc = document.querySelector('.sc');
+let cc = document.querySelector('.cc');
 
-
+let c=0;
+let cs =0;
 
 emoji = {
-    first : '🪨',
+    first : '🥌',
     Second : '📰',
     third :'✂️'
 }
@@ -35,11 +38,17 @@ play.addEventListener('click', function(){
 
  }else if(computer==2){com.innerHTML= emoji.Second
     win.textContent= 'Computer Win'
+    c=c+5;
+    cc.textContent= `${c}`;
+    
 
 
  }if(computer==3){
     com.innerHTML= emoji.third
     win.textContent= 'You Win'
+cs=cs+5;
+sc.textContent= `${cs}`;
+
  }
 
     })
@@ -51,6 +60,8 @@ play.addEventListener('click', function(){
         if(computer ==1){
             com.innerHTML= emoji.first
             win.textContent= 'You Win'
+            cs=cs+5;
+sc.textContent= `${cs}`;
          
           }else if(computer==2){com.innerHTML= emoji.Second
              win.textContent= 'TIE'
@@ -59,6 +70,9 @@ play.addEventListener('click', function(){
           }if(computer==3){
              com.innerHTML= emoji.third
              win.textContent= 'Computer Win'
+             c=c+5;
+             cc.textContent= `${c}`;
+             
           }
     })
     img3.addEventListener('click' , function(){
@@ -69,10 +83,13 @@ play.addEventListener('click', function(){
         if(computer ==1){
             com.innerHTML= emoji.first
             win.textContent= 'Computer Win'
-         
+            c=c+5;
+            cc.textContent= `${c}`;
+            
           }else if(computer==2){com.innerHTML= emoji.Second
              win.textContent= 'You Win'
-         
+             cs=cs+5;
+             sc.textContent= `${cs}`;
          
           }if(computer==3){
              com.innerHTML= emoji.third
