@@ -21,12 +21,15 @@ emoji = {
 img.style.display='none'
 
 play.addEventListener('click', function(){
+    play.textContent="Reset";
    
-    if(img=='none'){
-        img.style.display='none'
+    if(img.style.display=='none'){
+        img.style.display='block'
     }
     else{
-        img.style.display='block'
+        play.textContent="Play";
+        location.reload();
+        
     }
     img1.addEventListener('click' , function(){
         computer =Math.floor(Math.random() * 3 )+1;
@@ -110,5 +113,3 @@ sc.textContent= `${cs}`;
           
           
     })
-    
-
