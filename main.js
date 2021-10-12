@@ -50,6 +50,10 @@ cs=cs+5;
 sc.textContent= `${cs}`;
 
  }
+ if(cs==50 ){
+    alert('You WIn,Please Reset Game');}if(c==50){
+        alert('Computer WIn,Please Reset Game')
+    }
 
     })
     img2.addEventListener('click' , function(){
@@ -74,6 +78,10 @@ sc.textContent= `${cs}`;
              cc.textContent= `${c}`;
              
           }
+          if(cs==50 ){
+            alert('You WIn,Please Reset Game');}if(c==50){
+                alert('Computer WIn,Please Reset Game')
+            }
     })
     img3.addEventListener('click' , function(){
         computer =Math.floor(Math.random() * 3 )+1;
@@ -91,10 +99,16 @@ sc.textContent= `${cs}`;
              cs=cs+5;
              sc.textContent= `${cs}`;
          
-          }if(computer==3){
+          } if (computer==3){
              com.innerHTML= emoji.third
              win.textContent= 'TIE'
-          }
+          }if(cs==50 ){
+            alert('You WIn,Please Reset Game');}if(c==50){
+                alert('Computer WIn,Please Reset Game')
+            }
     })
-})
+          
+          
+    })
+    
 
